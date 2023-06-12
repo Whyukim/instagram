@@ -1,5 +1,5 @@
 import { authOptions } from "app/api/auth/[...nextauth]/route";
-import NewPost from "components/Forms/Add/newPost";
+import NewPost from "components/Forms/Add/NewPost";
 import { Metadata } from "next";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
