@@ -27,7 +27,7 @@ function PostDetail({ post }: IPostDetail) {
           sizes="650px"
         />
       </div>
-      <div className="w-full basis-2/5 flex flex-col">
+      <div className="w-full basis-2/5 flex flex-col dark:bg-[#151515e0]">
         <PostHeader userImage={userImage} username={username} />
         <ul className="flex-grow border-t border-gray-200 overflow-y-auto p-4 mb-1">
           {comments &&
