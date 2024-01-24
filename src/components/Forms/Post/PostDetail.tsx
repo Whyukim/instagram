@@ -16,7 +16,7 @@ function PostDetail({ post }: IPostDetail) {
   const comments = data?.comments;
 
   return (
-    <section className="flex w-full h-full">
+    <section className="flex w-full h-full flex-col md:flex-row">
       <div className="relative basis-3/5">
         <Image
           className="object-cover"
@@ -29,7 +29,7 @@ function PostDetail({ post }: IPostDetail) {
       </div>
       <div className="w-full basis-2/5 flex flex-col dark:bg-[#151515e0]">
         <PostHeader userImage={userImage} username={username} />
-        <ul className="flex-grow border-t border-gray-200 overflow-y-auto p-4 mb-1">
+        <ul className="flex-grow border-t border-gray-200 overflow-y-auto p-4 mb-1 max-h-[200px] overflow-auto flex flex-col gap-3 md:max-h-none">
           {comments &&
             comments.map(
               ({ image, username: commentUserName, comment }, index) => (
