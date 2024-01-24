@@ -21,7 +21,7 @@ function PostModal({ onClose, children }: IPostModal) {
       >
         <Close />
       </button>
-      <div className="bg-white w-4/5 h-3/5 max-w-7xl">{children}</div>
+      <div className="bg-white w-4/5 h-4/5 max-w-7xl md:h-3/5">{children}</div>
     </section>
   );
 }
